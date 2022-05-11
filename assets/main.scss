@@ -1,0 +1,170 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "styles";
+
+
+// Below you can add bits of CSS to override the default settings. I've included a couple to get you started. Just remove the "//" from the beginning of each line to activate it, and refresh your browser. For more information on CSS and how to use it, see https://www.w3schools.com/css/.
+
+// To change the fonts for the headings across the site:
+// h1, h2, h3, h4, h5 {
+  //  font-family: "Garamond", Arial, Helvetica, sans-serif;
+ //font-size: 100px;
+  //color: #4CAF50
+
+//}
+// If you would like to switch off an entire section of CSS, you can also place /* and */ at each end of a block, like this:
+
+
+// To change the fonts for the main site title:
+//THIS IS WHAT CODE LOOKED LIKE BEFORE CHANGES
+//header.masthead .page-heading h1, header.masthead .site-heading h1 {
+  //  font-family: Garamond, Times, serif;
+    //font-weight: bold;
+    //font-style: normal;
+//}
+
+header.masthead .page-heading h1, header.masthead .site-heading h1 {
+    font-family: Garamond, Times, serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#mainNav .navbar-brand {
+    font-family: Garamond, Garamond, Garamond;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+// To customise the navigation bar links:
+/*
+#mainNav .navbar-nav > li.nav-item > a {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: #4CAF50;
+}
+*/
+
+// To customise the way that tables look:
+
+/*
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+
+// To see what the above does to tables, just remove those bits.
+
+h1 {
+  font-family: Garamond, serif;
+}
+
+header.masthead .page-heading h1, header.masthead .site-heading h1 {
+    font-family: Garamond, Times, serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+ h1, h2, h3, h4, h5 {
+   font-family: "Garamond", Arial, Helvetica, sans-serif;
+//font-size: 100px;
+ //color: #4CAF50
+
+}
+
+// Shiny new dropbdown menu — obviously style it however you like by editing the CSS below...
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+//    font-family: "Garamond", Arial, Helvetica, sans-serif; // ...for example the font
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+
+// To change the fonts for the main site navigation bar:
+
+#mainNav .navbar-brand {
+//    font-family:;
+    font-weight: normal;
+    font-style: normal;
+}
